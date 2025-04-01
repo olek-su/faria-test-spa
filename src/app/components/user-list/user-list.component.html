@@ -28,7 +28,7 @@
             <td>{{ user.age }}</td>
             <td>{{ user.registered | formatDate }}</td>
             <td>{{ user.email }}</td>
-            <td>{{ user.balance }}</td>
+            <td>{{ user.balance | formatCurrency }}</td>
         </tr>
 	</tbody>
 </table>

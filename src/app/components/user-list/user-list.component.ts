@@ -6,11 +6,12 @@ import { BehaviorSubject, combineLatest, map, of, startWith, switchMap, take } f
 import { UserData } from '../../models/user-data.model';
 import { FormatDatePipe } from '../../pipes/formatted-date.pipe';
 import { UserIconComponent } from '../user-icon/user-icon.component';
+import { FormatCurrencyPipe } from '../../pipes/formatted-number.pipe';
 
 @Component({
   selector: 'app-user-list',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormatDatePipe, UserIconComponent], 
+  imports: [CommonModule, ReactiveFormsModule, FormatDatePipe, FormatCurrencyPipe, UserIconComponent], 
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.scss'
 })
