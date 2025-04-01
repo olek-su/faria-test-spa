@@ -41,8 +41,8 @@ export class UserListComponent {
   }
 
   public resetBalances(): void {
-    const x = this.allUsers$.value;
-    const qwe = x.map((user) => ({ ...user, balance: '0' }))
-    this.allUsers$.next(qwe);
+    const allUsers = this.allUsers$.value;
+    const updatedUsers = allUsers.map((user) => ({ ...user, balance: '0' }))
+    this.allUsers$.next(updatedUsers);
   }
 }
